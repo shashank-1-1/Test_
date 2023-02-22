@@ -2,7 +2,7 @@ node{
   stage('SCM Checkout'){
     tool name: 'Maven3', type: 'maven'
     
-    git 'https://github.com/shashank-1-1/Test_/new/master/my-app-master'
+    git 'https://github.com/shashank-1-1/Test_/tree/master/my-app-master'
   }
   stage('Compile-Package'){
     sh 'mvn package'
