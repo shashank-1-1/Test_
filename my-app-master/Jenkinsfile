@@ -1,6 +1,6 @@
 node{
   stage('SCM Checkout'){
-    tool name: 'Maven3', type: 'maven'
+    def mvnHome = tool name: 'Maven3', type: 'maven'
     
     git 'https://github.com/shashank-1-1/Test_/tree/master/my-app-master'
   }
